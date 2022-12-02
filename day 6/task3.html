@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!-- write a class to calculate the uber price. -->
+    <!-- Discount-25% to the user, then what will be the price-
+        create a new method -->
+    <script>
+        class uber{
+            constructor(km,rate){
+                this.km=km
+                this.rate=0
+                for(i=0;i<=km;i++){
+                    rate=rate+40
+                }return rate
+            }
+            getDiscount(){
+                if(rate>500){
+                    rate1=rate*25/100
+                    discount=rate-rate1
+                }return discount
+            }
+        }
+        
+        var ride1 = new uber(50,0)
+        var ride2 = new uber(60,0)
+
+        console.log(ride1)
+        
+    </script>
+</body>
+</html>

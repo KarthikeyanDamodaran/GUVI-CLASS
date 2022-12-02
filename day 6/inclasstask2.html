@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Movie{
+            constructor(title,studio,rating){
+                this.title=title
+                this.studio=studio
+                if(rating==undefined){
+                    this.rating="PG"
+                }else{
+                    this.rating=rating
+                }getPG(array){
+                    t=[]
+                    for(i=0;i=array.length;i++){
+                    if (array[i].rating=="PG"){
+                        t.push[array[i]]
+                    }
+                }return t
+
+                }
+            }
+            }
+         var mov1 = new Movie("Casino royal","Fox studios","PG13")
+         var mov2 = new Movie("abc","qwe")
+         var mov3 = new Movie("gh","qwe","PG20")
+         var mov4 = new Movie("abc","qwe","PG30")
+         var mov5 = new Movie("abc","qwe")
+           console.log(mov1,mov2,mov3,mov4,mov5)
+            let array = [mov1,mov2,mov3,mov4,mov5]
+            console.log(mov1.getPG(array))
+    </script>
+</body>
+</html>
