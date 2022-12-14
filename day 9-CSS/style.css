@@ -1,0 +1,9 @@
+/* external */
+p{
+    /* important tag is used to give more priority to external css */
+    color: pink !important ; 
+    font-size: 66px !important;
+}
+p{
+    font-family: cursive;
+}

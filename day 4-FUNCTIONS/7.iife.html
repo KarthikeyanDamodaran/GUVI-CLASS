@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        (
+            function(){
+                console.log("IIFE Function")
+            }
+        )();
+
+
+        (
+            function(name){
+                console.log(name)
+            }
+        )("Jones");
+    </script>
 </body>
 </html>
