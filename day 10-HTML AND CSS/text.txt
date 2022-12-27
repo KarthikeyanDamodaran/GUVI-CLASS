@@ -1,1 +1,215 @@
 BOX MODEL in CSS
+padding
+margin
+border
+border radius
+
+--------------------------------------------------------
+PSEUDO-CLASSES in CSS
+
+A pseudo-class is a feature of CSS which defines the special CSS state/style of an HTML element.
+
+Where it is Used
+Styling of an element
+Creating of anchor tags with visited and unvisited CSS features
+
+
+<a href="#">Visit Guvi</a>
+ 
+ 
+    <a href="#">Google</a>
+ 
+    <div id="suman">
+ 
+    </div>
+
+
+a:link {
+    color: violet;
+}
+ 
+a:visited {
+    color: red;
+}
+ 
+ 
+a:hover{
+    color:bisque;
+}
+ 
+ 
+#suman{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+ 
+#suman:hover{
+    color:aquamarine;
+}
+ 
+
+
+
+<!-- TOOLTip using HTML and CSS -->
+ 
+    <div id="container">Suman Gangopadhyay is in India now
+      <div id="tooltip">The state of Suman! </div>
+    </div>
+
+#tooltip {
+    display: none;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 16px;
+    width:130px;
+    height:20px;
+    border-radius: 5px;
+}
+ 
+#container:hover #tooltip{
+    display: block;
+}
+
+<div id="container">
+      <i id="first">B</i>
+      <i id="second">B</i>
+      <i id="third">C</i>
+    </div>
+
+body{
+    padding: 0;
+    margin: 0;
+}
+ 
+#container{
+    background-color: black;
+    color: antiquewhite;
+    width: 60px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ 
+#first, #second, #third{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+<header>Example of Flex Box</header>
+ 
+    <section>
+      <img class="pic" src="img/cat1.jpg" alt="image of cat">
+      <img class="pic" src="img/dog.jpeg" alt="image of dog">
+      <img class="pic" src="img/pic1.jpg" alt="image of mountain">
+    </section>
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+header{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+ 
+section{
+    width: auto;
+    height: 200px;
+    /* background-color:blueviolet ; */
+    display: flex;
+    flex-direction: row;
+}
+ 
+.pic{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    margin: auto;
+ 
+}
+
+
+<!-- TOP NAVIGATION BAR -->
+    <header>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PAYMENTS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </header>
+
+/* TOP NAVIGATION BAR CSS */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ 
+header{
+    width: auto;
+    background-color: blueviolet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+ 
+header li{
+    display: inline-block;
+}
+ 
+header li a{
+    text-decoration: none;
+    color: yellow;
+    padding-right: 50px;
+}
+
+
+
+<!-- LEFT NAVIGATION BAR -->
+ 
+    <nav id="left_nav_bar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PAYMENTS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+
+/* CSS FOR LEFT NAVIGATION BAR */
+ 
+#left_nav_bar{
+    height: auto;
+    width: 200px;
+    text-transform:capitalize;
+    margin-top: 10px;
+ 
+}
+ 
+#left_nav_bar li{
+    list-style-type: none;
+    background-color: cadetblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ 
+#left_nav_bar li a{
+    text-decoration: none;
+    color: yellow;
+    padding-left: 10px;
+}
+ 
+#left_nav_bar li:hover{
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}

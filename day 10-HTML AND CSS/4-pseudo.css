@@ -1,0 +1,22 @@
+a:link{
+    color:violet ;
+
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+#kd1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#kd1:hover{
+   background-color:chartreuse;
+}

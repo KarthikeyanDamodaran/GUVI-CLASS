@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+#heading{
+    text-align: center;
+    background-color: blue;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+section{
+    width: auto;
+    height: 200px;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row ;
+
+}
+.pics{
+    /* width:150px; */
+    height: 150px;
+    /* border-radius: 50px; */
+    margin:auto;
+} 
