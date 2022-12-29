@@ -1,33 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function calculate(a,b){
-            console.log(a+b)
-        }
-        calculate(1,2)
-        // a=1
-        // b=2
-        // 1+2=3
-        calculate(5,7)
+              function calculate(a,b){
+                  console.log(a+b)
+              }
+              calculate(1,2)
+              // a=1
+              // b=2
+              // 1+2=3
+              calculate(5,7)
 
 
 
-        function calculate1(a,b){
-            var result=a+b;
-            return result
-        }
-        console.log(calculate1(12,2))
-        // a=1
-        // b=2
-        // 1+2=3
-        console.log(calculate1(15,7))
+              function calculate1(a,b){
+                  var result=a+b;
+                  return result
+              }
+              console.log(calculate1(12,2))
+              // a=1
+              // b=2
+              // 1+2=3
+              console.log(calculate1(15,7))
+
+
+
+              function displayName(name){
+                  console.log("hello from" + name)
+              }
+
+              displayName("Guvi")
+
+
+              function getSum(n1,n2){
+                     console.log(n1+n2)
+              }
+
+              getSum(2,4)
+
+
+              function getSumm(x,y){
+                  var res=x+y
+                  return res
+              }
+              console.log(getSumm(4,5))
+
+
+
+              //  function getSumm(x,y){
+              //     return x+y
+              // }
+              // var res=getSumm(20,10)
+              // console.log(res)
+
+
+              function clc(a1,a2){
+                  let ans={
+                      sum:a1+a2,
+                      sub:a1-a2,
+                      mul:a1*a2,
+                      div:a1/a2
+                  }
+                  return ans;
+
+              }
+              var result11=clc(20,25)//calling
+               console.log(result11)
+               console.log("sum:"+ result11.sum)
+
+      // ------------------------------------------------------------------------------------------------------------------------
+
+              let mobile={
+                  brand:"Samsung",
+                  color:"black",
+                  price:"65k",
+                  isInsured:"yes"
+              }
+
+              function displaymobdata(obj){
+                  console.log(
+
+                  )
+
+              }
+
+
+              displaymobdata(mobile)
+      // ------------------------------------------------------
+
+      var p1={
+          name:'suresh',
+          age:35,
+          address:'chennai',
+          email:'abc@gmail.com',
+          phone:12345
+          }
+        var  p2={
+          name:'ram',
+          age:45,
+          address:'bangalore',
+          email:'bc@gmail.com',
+          phone:1234
+          }
+
+      function displayDetails(obj1,obj2){
+          console.log(
+              name: ${p1.name}
+
+          )
+      }
+
+      displayDetails(p1,p2)
     </script>
-</body>
+  </body>
 </html>

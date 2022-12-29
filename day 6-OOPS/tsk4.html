@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            contrsuctor(name,grade){
+                this._name=name
+                this._grade=grade
+            }
+            get name(){
+                return this.name;
+            }
+
+            set name(val){
+                this._name=val;
+            }
+
+            get grade(){
+                return this.grade
+            }
+
+            set grade(val){
+                if(val<0||val>100){
+                    throw new Error("invalid grade")
+                }
+                this.grade=val
+            }
+            
+        }
+
+        let student= ne student("sohan",85)
+        console.log(student.name)
+        student.name="sohan kumar"
+        console.log(student.grade)
+        
+    </script>
+</body>
+</html>

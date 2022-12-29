@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // getter and setter aare used in js to provide an additional behaviour for getting(read) and setting(set) the values of a object properties
+        // we can use this concept to update,validate a part of obeject
+        class employee{
+            constructor(name,salary){
+                this.name=name;
+                this.salary=salary
+            }
+            getName(){
+                return this.name;
+            }
+            getSalaray(){
+                return this.salary
+            }
+            setSalary(newSalary){
+                this.salary = newSalary
+            }
+            increaseSalary(percentage){
+                this.salary+=this.salary*percentage/100
+            }
+            }
+        
+        const employee1=new employee("john",10000)
+            console.log(employee1.getName())
+            console.log(employee1.getSalaray())
+            employee1.setSalary(15000)
+            console.log(employee1.getSalaray())
+            employee1.increaseSalary(10)
+            console.log(employee1.getSalaray())
+    
+    
+    </script>
+</body>
+</html>
