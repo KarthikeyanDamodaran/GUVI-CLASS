@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees=[
+    {
+        id:1,
+        name:"John Smith",
+        position:"Manager",
+        salary:75000,
+        skills:["leadership","communication","team management",]
+    },
+    {
+        id:2,
+        name:"Jane Doe",
+        position:"Developer",
+        salary:55000,
+        skills:["Javascript","React.js","Node.js",]
+    },
+    {
+        id:3,
+        name:"Jenny",
+        position:"Designer",
+        salary:50000,
+        skills:["graphic Designer","UI/UX","Adobe creative suite",]
+    },
+]
+
+        const all =employees.map((Element)=>{
+            return{
+            id:Element.id,
+            name:Element.name,
+            position:Element.position,
+            salary:Element.salary,
+            skills:Element.skills.join(",")
+        }
+    })
+
+        console.log(all)
+    </script>
+</body>
+</html>
