@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // // Suppose you have an array of objects that represent the people,
+// // // each object has a name & age.We want to get the names of all people who are over the age of 30& sort them in alphabetical order.
+
+// // const people=[
+// //     {name:"joe",age:35},
+// //     {name:"Alice",age:25},
+// //     {name:"Bob",age:32},
+// //     {name:"Charlie",age:45},
+// //     {name:"Jenny",age:28},
+  
+// // ]
+
+// // //chaining over MRF
+// // const names=people
+// //     .filter(person=>person.age>30)
+// //     .map(person=>person.name)
+// //     .sort();
+// // console.log(names);
+
+
+// // Given a nested object.Iterate over the data  using for  loop
+
+// const data={
+//     apples:[
+//         {color:"red",quantity:2},
+//         {color:"green",quantity:5},
+//         {color:"black",quantity:3},
+//     ],
+//     banana:[
+//         {color:"yellow",quantity:2},
+//         {color:"green",quantity:1}
+//     ],
+//     oranges:[
+//         {color:"orange",quantity:5},
+//         {color:"green",quantity:2}
+//     ]
+// }
+// // using for loop to iterate over the entire data & print it
+// // 2 for loop
+// //nested loop 
+// // for(let fruit in data){
+// //      console.log(fruit)
+// //     for(let i=0;i<data[fruit].length;i++){
+// //         console.log(`
+// //         Color: ${data[fruit][i].color}
+// //         Quantity: ${data[fruit][i].quantity}
+// //         `)
+// //     }
+// // }
+
+
+
+// // Given  a nested object to iterate over the data using for loop and print the data 
+// const students={
+//     'student1':{
+//         'name': 'John',
+//         'grades':{
+//             'math':90,
+//             'english':80,
+//             'history':85
+//         }
+//     },
+//     'student2':{
+//         'name': 'Jane',
+//         'grades':{
+//             'math':80,
+//             'english':96,
+//             'history':90
+//         }
+//     },
+
+//     'student3':{
+//         'name': 'joe',
+//         'grades':{
+//             'math':80,
+//             'english':90,
+//             'history':95
+//         }
+//     },
+    
+// }
+
+// for(let student in students){
+//     console.log(`Name:${students[student].name}`)
+//     //To print the Grades 
+//     console.log('Grades:');
+
+//     for(let subject in students[student].grades){
+//         console.log(`${subject} ${students[student].grades[subject]}`)
+//     }
+
+
+// }
+
+
+// const sales=[
+//     {
+//         region:"East",
+//         products:[
+//             {
+//                 name:"Product A",
+//                 sales:[
+//                     {
+//                         date:"2022-01-01",
+//                         salesperson:"John Smith",
+//                         units:10,
+//                         total:100,
+//                     },
+//                     {
+//                         date:"2022-01-02",
+//                         salesperson:"John Smith",
+//                         units:5,
+//                         total:500,
+//                     }
+//                 ]
+//             },
+//             {
+//                 name:"Product B",
+//                 sales:[
+//                     {
+//                         date:"2022-01-01",
+//                         salesperson:"Jane Doe",
+//                         units:20,
+//                         total:4000,
+//                     },
+//                     {
+//                         date:"2022-01-02",
+//                         salesperson:"Jane Doe",
+//                         units:10,
+//                         total:2000,
+//                     }
+//                 ]
+//             }
+//         ]
+//     },
+
+//     {
+//         region:"West",
+//         products:[
+//             {
+//                 name:"Product A",
+//                 sales:[
+//                     {
+//                     date:"2022-01-01",
+//                     salesperson:"Mike johnson",
+//                     units:15,
+//                     total:1500,
+//                     },
+//                     {
+//                         date:"2022-01-02",
+//                         salesperson:"Mike johnson",
+//                         units:10,
+//                         total:1000,
+//                     }
+//                 ]
+//             },
+//             {
+//                 name:"Product B",
+//                 sales:[
+//                     {
+//                     date:"2022-01-01",
+//                     salesperson:"Sarah Smith",
+//                     units:10,
+//                     total:2000,
+//                     },
+//                     {
+//                         date:"2022-01-02",
+//                         salesperson:"Sarah Smith",
+//                         units:5,
+//                         total:1000,
+//                         }
+//                 ]
+//             }
+//         ]
+//     }
+// ]
+
+
+// Produce the output as list of all sales by region,product and date with each level 
+// step step 
+
+// const employees=[
+//     {name:"John","salary":50000},
+//     {name:"Jane","salary":60000},
+//     {name:"Joe","salary":40000},
+//     {name:"Alice","salary":70000}
+// ]
+
+// // Print the dataof the employees containg a salary greater than 50000 $ 
+
+// const highesPaiSalaries=employees.filter(emp=>emp.salary>50000);
+
+// console.log(highesPaiSalaries);
+
+    </script>
+</body>
+</html>

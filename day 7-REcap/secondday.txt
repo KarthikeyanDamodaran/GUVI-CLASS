@@ -1,0 +1,132 @@
+// Spread operator
+// syntax:? ...
+// spread out the element of an array or object into new array
+// const numbers=[1,2,3]
+// const newNumbers=[...numbers,4,5,6]
+// console.log(newNumbers);
+
+// //combining the 2 or more arrays together
+// const numbers1=[1,2,3]
+// const numbers2=[4,5,6]
+
+// const combine=[...numbers1,...numbers2]
+
+
+// ///use spread operator on function to pass it as argument,
+// const data=[1,2,3,8,5]
+// const sorteddata=Math.sort(...data);
+// console.log(sorteddata);
+
+// const students=[
+//     {name:"Alice", age:21,stream:"Computer Science"},
+//     {name:"Bob", age:22,stream:"Mechanical Engineering"},
+//     {name:"Jane", age:20,stream:"Eletronics"}
+// ]
+
+
+
+// const newStudent=[...students,{name:"jenny", age:21,stream:"Computer Science"}]
+// console.log(newStudent);
+
+
+
+// const products=[
+//     {name:"product 1",quantity:10,price:5},
+//     {name:"product 2",quantity:0,price:3},
+//     {name:"product 3",quantity:5,price:8},
+//     {name:"product 4",quantity:7,price:2},
+//     {name:"product 5",quantity:2,price:9}
+// ]
+
+// // Use the given data for calculating the total price whose quantity is greater than 0
+// use loop mechanism with operator concept 
+// total=product.quantity*product.price;
+
+// codekata/Webcode/Zen Task Submission/Capstone
+// Attendance:85%
+// React ,Node.js
+// 15 Question
+
+
+// const obj1={a:1,b:2};
+// const obj2={c:3,d:4};
+// const merge={...obj1,...obj2};
+// console.log(merge);
+
+
+// const obj1={a:1,b:2,c:3}
+// const obj2={c:4,d:5};
+// const merge={...obj2,...obj1};
+// console.log(merge);
+
+// const obj={a:1,b:2,c:3};
+// const copy={...obj};
+// console.log(copy);
+// // console.log(obj);
+
+//Extraction of the values from an object
+// const obj={a:1,b:2,c:3};
+// const {a,c}={...obj};
+// console.log(a);
+// console.log(c);
+
+
+
+// const obj1={a:1,b:2};
+// const obj2={c:3,d:4};
+// const obj3={...obj1,...obj2,e:5}
+// console.log(obj3)
+
+
+// const arr=[1,2,3];
+// const arr2=[...arr,4,5,6];
+// console.log(arr2);
+
+// const nestedArray=[[1,2],[3,4]];
+// const nestedArray2=[...nestedArray,[5,6],[7,8]];
+// console.log(nestedArray2);
+
+
+const words=['hello','world','how','are','you'];
+const numbers=[10,20,30,40,50]
+//use filter->map->sort function  to get all the element whose
+// length is lesser than 4 and print the names of those element in sorted order 
+// (Uppercase)
+
+// const data=words
+//     .filter(word=>word.length<=3)
+//     .map(word=>word.toUpperCase())
+//     .sort().join(', ');
+
+// console.log(data)
+
+// const string="Lavish";
+
+
+
+const data=[
+    {id:1,name:"Alice",age:25,city:"New York"},
+    {id:2,name:"Bob",age:30,city:"Chicago"},
+    // {id:3,name:"Charlie",age:35,city:"New York"},
+    // {id:4,name:"Joe",age:40,city:"Chicago"},
+]
+
+//filter out the object with an age less than or equal to 30
+//increase the age of remaining objects by 5
+// group the objects by city using reduce methods 
+// key value 
+// city names:keys 
+// output :array of objects
+
+const newData=data
+    .filter(item=>item.age>30)
+    .map(item=>({...item,age:item.age+5}))
+    .reduce((acc,item)=>{
+        if(!acc[item.city]){
+            acc[item.city]=[];
+        }
+        acc[item.city].push(item);
+        return acc;
+    },{})
+
+console.log(newData);
