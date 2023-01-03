@@ -21,8 +21,15 @@
                 ]
                 const output=data
                                 .filter((ppl)=>ppl.age>30)
-                                .map((ppl)=>ppl.age+5)
-                                .reduc((Acc,ppl)=>ppl.city==='chicago')
+                                .map((ppl)=>({...ppl,age:ppl.age+5}))
+                                .reduce((acc,ppl)=>{
+                                    if(!acc[ppl.city]){
+                                        acc[ppl.city]=[]
+                                    }
+                                    acc[ppl.city].push[city]
+                                    return acc
+                                },{})
+                                
                                 console.log(output)
 
 
