@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students={
+            'student1':{
+                'name' : 'john',
+                'grades':{
+                    'math':90,
+                    'english':80,
+                    'history':85
+                }
+            },
+            'student2':{
+                'name' : 'dane',
+                'grades':{
+                    'math':80,
+                    'english':96,
+                    'history':90
+                }
+            },
+            'student3':{
+                'name' : 'tron',
+                'grades':{
+                    'math':80,
+                    'english':90,
+                    'history':95
+                }
+            },            
+        }
+        for (let student in students){
+            console.log(`Name:${students[student].name}`)
+
+            console.log(`grades:`)
+
+            for(let subject in students[student].grades){
+                console.log(`$(subject ${students[student].grades[subject]}`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees=[
+{name:"Alice",department:"sales",salary:30000},
+{name:"John",department:"engineering",salary:90000},
+{name:"Bob",department:"sales",salary:70000},
+{name:"jenny",department:"marketing",salary:70000},
+{name:"joe",department:"sales",salary:90000}
+]
+
+const saleploy=employees.filter((ppl)=>ppl.department==="sales")
+const names=saleploy.map((ppl)=>ppl.name)
+console.log(names)
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const words=['hello','world','how','are','you']
+        // const data=words.filter((element)=>element.length<4)
+        //                 .map((element)=>element.toUpperCase())
+        //                  .join(' ')
+        // console.log(data)
+                const data=[
+                    {id:1,name:'alice',age:25,city:'new york'},
+                    {id:1,name:'bob',age:30,city:'chicago'},
+                    {id:1,name:'charlie',age:35,city:'new york'},
+                    {id:1,name:'joe',age:40,city:'chicago'},
+                ]
+                const output=data
+                                .filter((ppl)=>ppl.age>30)
+                                .map((ppl)=>ppl.age+5)
+                                .reduc((Acc,ppl)=>ppl.city==='chicago')
+                                console.log(output)
+
+
+        </script>
+</body>
+</html>
